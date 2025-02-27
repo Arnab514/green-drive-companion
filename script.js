@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuButton.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+});
+
 // Simple parallax effect for the hero section
 window.addEventListener('scroll', () => {
     const hero = document.querySelector('.hero');
